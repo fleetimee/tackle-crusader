@@ -8,6 +8,7 @@ import 'package:flutter_huixin_app/ui/pages/home/components/home_ui_avatar_loade
 import 'package:flutter_huixin_app/ui/pages/home/components/home_ui_avatar_loading.dart';
 import 'package:flutter_huixin_app/ui/pages/home/components/home_ui_tile_master.dart';
 import 'package:flutter_huixin_app/ui/pages/home/components/home_ui_tile_master_loading.dart';
+import 'package:flutter_huixin_app/ui/widgets/prompt.dart';
 import 'package:intl/intl.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:shimmer/shimmer.dart';
@@ -178,6 +179,30 @@ class HomeItems extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+
+          /// Delete this
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              TextButton(
+                onPressed: () => showDialog<String>(
+                  barrierDismissible: false,
+                  context: context,
+                  builder: (BuildContext context) => const CorrectDialog(),
+                ),
+                child: const Text('Correct',
+                    style: TextStyle(color: Colors.green)),
+              ),
+              TextButton(
+                onPressed: () => showDialog<String>(
+                  barrierDismissible: false,
+                  context: context,
+                  builder: (BuildContext context) => const WrongDialog(),
+                ),
+                child: const Text('Wrong', style: TextStyle(color: Colors.red)),
+              ),
+            ],
           ),
           const SizedBox(height: 16),
           Expanded(

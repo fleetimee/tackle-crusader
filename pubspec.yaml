@@ -11,6 +11,7 @@ dependencies:
   audio_session: ^0.1.16
   audioplayers: ^4.1.0
   awesome_dialog: ^3.1.0
+  awesome_flutter_extensions: ^1.1.1
   bloc: ^8.1.2
   cached_network_image: ^3.2.3
   crypto: ^3.0.3
@@ -46,6 +47,7 @@ dependencies:
   intl: ^0.18.0
   just_audio: ^0.9.34
   loader_overlay: ^2.2.0
+  logger: ^1.4.0
   lottie: ^2.4.0
   modal_bottom_sheet: ^3.0.0-pre
   permission_handler: ^10.3.0
