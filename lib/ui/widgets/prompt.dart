@@ -70,7 +70,7 @@ class CorrectDialog extends StatelessWidget {
               ),
               child: const Center(
                 child: Text(
-                  'SEXT',
+                  'NEXT',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 25,
@@ -167,7 +167,7 @@ class WrongDialog extends StatelessWidget {
               ),
               child: const Center(
                 child: Text(
-                  'SEXT',
+                  'NEXT',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 25,
